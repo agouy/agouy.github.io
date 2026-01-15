@@ -1,0 +1,488 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="CV" activePage="cv">
+	<section class="page-header">
+		<h1>Curriculum Vitae</h1>
+		<p class="page-intro">Academic background, professional experience, and technical expertise.</p>
+	</section>
+
+	<section class="section">
+		<h2>Professional Experience</h2>
+		<div class="timeline">
+			<div class="timeline-item">
+				<span class="timeline-date">2020&ndash;Present</span>
+				<div class="timeline-content">
+					<h4>Founder & Owner</h4>
+					<p>AlgoLife SARL (formerly Gouy Data Consulting), France/Switzerland</p>
+					<p class="timeline-details">Data science solutions (software, visualization, pipelines) for life sciences companies, universities, and local governments. 5-star rated consultant on Upwork with international high-impact collaborations.</p>
+				</div>
+			</div>
+			<div class="timeline-item">
+				<span class="timeline-date">2022&ndash;2025</span>
+				<div class="timeline-content">
+					<h4>Head of Bioinformatics</h4>
+					<p>Tercen Data Analytics Ltd, Netherlands</p>
+					<p class="timeline-details">Led bioinformatics and AI product development for a cloud-based multi-omics analysis platform. Shipped production pipelines for scRNA-seq, spatial transcriptomics, and flow cytometry.</p>
+				</div>
+			</div>
+			<div class="timeline-item">
+				<span class="timeline-date">2020&ndash;2022</span>
+				<div class="timeline-content">
+					<h4>Senior Expert Data Science II</h4>
+					<p>Novartis Pharma AG (via Brine SA), Basel, Switzerland</p>
+					<p class="timeline-details">Contributed to the data42 program, leveraging AI and big data for drug discovery. Developed ML models on one of the largest pharmaceutical datasets (2M patient-years). Key role in developing the Map of Life platform.</p>
+				</div>
+			</div>
+			<div class="timeline-item">
+				<span class="timeline-date">2022</span>
+				<div class="timeline-content">
+					<h4>Scientific Collaborator</h4>
+					<p>University of Bern, Institute of Forensic Medicine</p>
+					<p class="timeline-details">Statistical analysis of experimental data and forensic software development (STRAF 2). Resulted in two key publications in forensic genetics.</p>
+				</div>
+			</div>
+			<div class="timeline-item">
+				<span class="timeline-date">2015&ndash;2019</span>
+				<div class="timeline-content">
+					<h4>PhD Candidate</h4>
+					<p>University of Bern, Switzerland</p>
+					<p class="timeline-details">Developed statistical and ML algorithms (Python, R, C++) for large-scale genomic datasets. 180 hours of teaching (Genomics, Statistics, R). Thesis defended <em>summa cum laude</em>. 6 publications including two cited 400+ times.</p>
+				</div>
+			</div>
+			<div class="timeline-item">
+				<span class="timeline-date">2013&ndash;2015</span>
+				<div class="timeline-content">
+					<h4>Research Internships</h4>
+					<p>University of Montpellier & CNRS Moulis, France</p>
+					<p class="timeline-details">Three internships focused on genomics, scientific software development (C++), and molecular biology.</p>
+				</div>
+			</div>
+			<div class="timeline-item">
+				<span class="timeline-date">2012&ndash;2013</span>
+				<div class="timeline-content">
+					<h4>Computer Science Tutor</h4>
+					<p>University of Limoges, France</p>
+					<p class="timeline-details">Trained students for IT certificates (350 hours) and managed SQL databases.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<h2>Education</h2>
+		<div class="timeline">
+			<div class="timeline-item">
+				<span class="timeline-date">2015&ndash;2019</span>
+				<div class="timeline-content">
+					<h4>PhD in Ecology and Evolution (Genomics)</h4>
+					<p>University of Bern, Switzerland &mdash; <em>summa cum laude</em></p>
+					<p class="timeline-details">Thesis: "Detection of polygenic selection from genomic data: new insights into adaptation, introgression and speciation"<br/>
+					Supervisor: Prof. Laurent Excoffier (SIB Swiss Institute of Bioinformatics)</p>
+				</div>
+			</div>
+			<div class="timeline-item">
+				<span class="timeline-date">2013&ndash;2015</span>
+				<div class="timeline-content">
+					<h4>Master's in Evolutionary Biology & Ecology</h4>
+					<p>University of Montpellier, France &mdash; <em>Highest honors</em></p>
+					<p class="timeline-details">Specialization: Population genomics and mathematical modeling<br/>
+					Supervisors: François Rousset & Pierrick Labbé</p>
+				</div>
+			</div>
+			<div class="timeline-item">
+				<span class="timeline-date">2010&ndash;2013</span>
+				<div class="timeline-content">
+					<h4>Bachelor's in Population Biology</h4>
+					<p>University of Limoges, France &mdash; <em>High honors</em></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<h2>Software, Tools & Methods</h2>
+		<div class="software-grid">
+			<div class="software-card featured">
+				<div class="software-header">
+					<h4>STRAF</h4>
+					<span class="software-badge">Lead Developer</span>
+				</div>
+				<p>Comprehensive online tool for STR data evaluation in forensic genetics. Used by forensic laboratories worldwide.</p>
+				<div class="software-meta">
+					<span class="tech">R, Shiny</span>
+				</div>
+				<div class="software-links">
+					<a href="https://github.com/agouy/straf" target="_blank" rel="noopener">GitHub</a>
+					<a href="https://straf.fr" target="_blank" rel="noopener">Live App</a>
+					<a href="https://doi.org/10.1016/j.fsigen.2017.03.012" target="_blank" rel="noopener">Paper</a>
+				</div>
+			</div>
+			<div class="software-card featured">
+				<div class="software-header">
+					<h4>fastsimcoal2</h4>
+					<span class="software-badge">Co-developer</span>
+				</div>
+				<p>Demographic inference under complex evolutionary scenarios. Standard tool for demographic modeling in population genetics.</p>
+				<div class="software-meta">
+					<span class="tech">C++</span>
+				</div>
+				<div class="software-links">
+					<a href="http://cmpg.unibe.ch/software/fastsimcoal2/" target="_blank" rel="noopener">Website</a>
+					<a href="https://doi.org/10.1093/bioinformatics/btab004" target="_blank" rel="noopener">Paper</a>
+				</div>
+			</div>
+			<div class="software-card">
+				<div class="software-header">
+					<h4>signet</h4>
+					<span class="software-badge">Lead Developer</span>
+				</div>
+				<p>R package for detection of gene subnetworks under selection in biological pathways.</p>
+				<div class="software-meta">
+					<span class="tech">R</span>
+				</div>
+				<div class="software-links">
+					<a href="https://github.com/cmpg/signet" target="_blank" rel="noopener">GitHub</a>
+					<a href="https://cran.r-project.org/package=signet" target="_blank" rel="noopener">CRAN</a>
+					<a href="https://doi.org/10.1093/nar/gkx626" target="_blank" rel="noopener">Paper</a>
+				</div>
+			</div>
+			<div class="software-card">
+				<div class="software-header">
+					<h4>Tercen Operators</h4>
+					<span class="software-badge">Lead Developer</span>
+				</div>
+				<p>Suite of bioinformatics operators for flow cytometry, scRNA-seq, and multi-omics analysis.</p>
+				<div class="software-meta">
+					<span class="tech">R, Docker</span>
+				</div>
+			</div>
+			<div class="software-card">
+				<div class="software-header">
+					<h4>Co-introgression Test</h4>
+					<span class="software-badge">Lead Developer</span>
+				</div>
+				<p>Statistical method for detecting coordinated adaptive introgression across gene networks in human populations.</p>
+				<div class="software-meta">
+					<span class="tech">R, Python</span>
+				</div>
+				<div class="software-links">
+					<a href="https://doi.org/10.1093/molbev/msz299" target="_blank" rel="noopener">Paper</a>
+				</div>
+			</div>
+			<div class="software-card">
+				<div class="software-header">
+					<h4>RND<sub>sp</sub></h4>
+					<span class="software-badge">Lead Developer</span>
+				</div>
+				<p>Method for estimating species-specific relative node depth to detect lineage-specific selection in multi-species comparisons.</p>
+				<div class="software-meta">
+					<span class="tech">Python</span>
+				</div>
+				<div class="software-links">
+					<a href="https://doi.org/10.1093/gbe/evae195" target="_blank" rel="noopener">Paper</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<h2>Teaching & Supervision</h2>
+		<div class="teaching-grid">
+			<div class="teaching-block">
+				<h4>University Teaching</h4>
+				<p class="teaching-context">University of Bern, 2015&ndash;2019</p>
+				<ul>
+					<li>Genomics and Bioinformatics (Master's) &mdash; 60h</li>
+					<li>Statistics for Biologists (Undergrad) &mdash; 60h</li>
+					<li>Introduction to R Programming &mdash; 40h</li>
+					<li>Population Genetics Seminars &mdash; 20h</li>
+				</ul>
+			</div>
+			<div class="teaching-block">
+				<h4>Student Supervision</h4>
+				<ul>
+					<li><strong>Edgar Maurel</strong> (2025) &mdash; Engineering internship, AI automation</li>
+					<li><strong>Tobias Böni</strong> (2019) &mdash; Master's thesis, co-supervisor</li>
+					<li><strong>Hira Imeri</strong> (2018) &mdash; Master's thesis, ML in population genetics</li>
+				</ul>
+			</div>
+			</div>
+	</section>
+
+	<section class="section">
+		<h2>Peer Review & Academic Service</h2>
+		<div class="service-grid">
+			<div class="service-block">
+				<h4>Journal Reviewer</h4>
+				<p>Active reviewer for: Bioinformatics, Molecular Biology and Evolution, Forensic Science International: Genetics, Genetics, Nucleic Acids Research, Molecular Ecology, Genome Biology and Evolution</p>
+			</div>
+			<div class="service-block">
+				<h4>Professional Memberships</h4>
+				<ul>
+					<li>ISFG &mdash; International Society for Forensic Genetics</li>
+					<li>SMBE &mdash; Society for Molecular Biology and Evolution</li>
+					<li>ISCB &mdash; International Society for Computational Biology</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.stats {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: var(--space-lg);
+		padding: var(--space-xl) 0;
+		border-top: 1px solid var(--color-border-light);
+		border-bottom: 1px solid var(--color-border-light);
+		margin-bottom: var(--space-2xl);
+	}
+
+	.stat {
+		text-align: center;
+	}
+
+	.stat-number {
+		display: block;
+		font-size: 2rem;
+		font-weight: 700;
+		color: var(--color-primary);
+	}
+
+	.stat-label {
+		font-size: 0.85rem;
+		color: var(--color-text-muted);
+	}
+
+	.timeline-details {
+		font-size: 0.85rem;
+		color: var(--color-text-muted);
+		margin-top: var(--space-xs);
+		margin-bottom: 0;
+	}
+
+	.software-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--space-lg);
+	}
+
+	.software-card {
+		background: var(--color-surface);
+		padding: var(--space-lg);
+		border-radius: var(--radius-md);
+		border: 1px solid var(--color-border);
+	}
+
+	.software-card.featured {
+		border-left: 3px solid var(--color-primary);
+	}
+
+	.software-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: var(--space-sm);
+	}
+
+	.software-header h4 {
+		margin-bottom: 0;
+	}
+
+	.software-badge {
+		font-size: 0.7rem;
+		font-weight: 600;
+		padding: var(--space-xs) var(--space-sm);
+		background: rgba(8, 145, 178, 0.1);
+		color: var(--color-accent);
+		border-radius: var(--radius-sm);
+		text-transform: uppercase;
+	}
+
+	.software-card p {
+		font-size: 0.9rem;
+		margin-bottom: var(--space-sm);
+	}
+
+	.software-meta {
+		display: flex;
+		gap: var(--space-md);
+		margin-bottom: var(--space-sm);
+	}
+
+	.software-meta span {
+		font-size: 0.8rem;
+		color: var(--color-text-muted);
+	}
+
+	.software-meta .impact {
+		color: var(--color-primary);
+		font-weight: 500;
+	}
+
+	.software-links {
+		display: flex;
+		gap: var(--space-md);
+	}
+
+	.software-links a {
+		font-size: 0.85rem;
+		font-weight: 500;
+	}
+
+	.skills-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: var(--space-xl);
+	}
+
+	.skill-category h4 {
+		color: var(--color-accent);
+		margin-bottom: var(--space-sm);
+	}
+
+	.skill-category ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.skill-category li {
+		font-size: 0.9rem;
+		padding: var(--space-xs) 0;
+		color: var(--color-text-muted);
+	}
+
+	.teaching-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--space-xl);
+	}
+
+	.teaching-block {
+		background: var(--color-surface);
+		padding: var(--space-lg);
+		border-radius: var(--radius-md);
+		border: 1px solid var(--color-border);
+	}
+
+	.teaching-block h4 {
+		color: var(--color-text);
+		margin-bottom: var(--space-xs);
+	}
+
+	.teaching-context {
+		font-size: 0.85rem;
+		color: var(--color-accent);
+		margin-bottom: var(--space-md);
+	}
+
+	.teaching-block ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.teaching-block li {
+		font-size: 0.9rem;
+		padding: var(--space-xs) 0;
+		border-bottom: 1px solid var(--color-border-light);
+	}
+
+	.teaching-block li:last-child {
+		border-bottom: none;
+	}
+
+	.talks-compact {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-sm);
+	}
+
+	.talk-item {
+		display: flex;
+		gap: var(--space-lg);
+		padding: var(--space-sm) 0;
+		border-bottom: 1px solid var(--color-border-light);
+	}
+
+	.talk-year {
+		font-family: var(--font-mono);
+		font-size: 0.85rem;
+		color: var(--color-text-muted);
+		min-width: 50px;
+	}
+
+	.talk-info {
+		font-size: 0.9rem;
+		color: var(--color-text-muted);
+	}
+
+	.talk-info strong {
+		color: var(--color-text);
+	}
+
+	.service-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--space-xl);
+	}
+
+	.service-block {
+		background: var(--color-surface);
+		padding: var(--space-lg);
+		border-radius: var(--radius-md);
+		border: 1px solid var(--color-border);
+	}
+
+	.service-block h4 {
+		color: var(--color-text);
+		margin-bottom: var(--space-sm);
+	}
+
+	.service-block p {
+		font-size: 0.9rem;
+		margin-bottom: 0;
+	}
+
+	.service-block ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.service-block li {
+		font-size: 0.9rem;
+		padding: var(--space-xs) 0;
+		color: var(--color-text-muted);
+	}
+
+	@media (max-width: 1024px) {
+		.skills-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.teaching-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.stats {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.software-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.software-header {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: var(--space-sm);
+		}
+	}
+</style>

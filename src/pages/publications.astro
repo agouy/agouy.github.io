@@ -1,0 +1,224 @@
+---
+import Layout from '../layouts/Layout.astro';
+import publicationsData from '../data/publications.json';
+
+const { publications, thesis, scholarId, metrics } = publicationsData;
+const journalPubs = publications.filter(p => p.type !== 'book-chapter').sort((a, b) => b.year - a.year);
+const bookChapters = publications.filter(p => p.type === 'book-chapter').sort((a, b) => b.year - a.year);
+const firstAuthorCount = publications.filter(p => p.firstAuthor).length;
+---
+
+<Layout title="Publications" activePage="publications">
+	<section class="page-header">
+		<h1>Publications</h1>
+		<p class="page-intro">Peer-reviewed research in computational biology, population genetics, and forensic science.</p>
+	</section>
+
+	<section class="section metrics">
+		<div class="metric">
+			<span class="metric-number">{publications.length}</span>
+			<span class="metric-label">Publications</span>
+		</div>
+		<div class="metric">
+			<span class="metric-number">{metrics.totalCitations.toLocaleString()}</span>
+			<span class="metric-label">Total Citations</span>
+		</div>
+		<div class="metric">
+			<span class="metric-number">{metrics.hIndex}</span>
+			<span class="metric-label">H-index</span>
+		</div>
+		<div class="metric">
+			<span class="metric-number">{firstAuthorCount}</span>
+			<span class="metric-label">First/Last Author</span>
+		</div>
+		<div class="metric-links">
+			<a href="https://orcid.org/0000-0002-2478-8475" target="_blank" rel="noopener" class="btn btn-secondary">ORCID</a>
+			<a href={`https://scholar.google.com/citations?user=${scholarId}&hl=en`} target="_blank" rel="noopener" class="btn btn-secondary">Google Scholar</a>
+		</div>
+		<p class="metrics-updated">Updated {metrics.lastUpdated} &mdash; <a href={`https://scholar.google.com/citations?user=${scholarId}&hl=en`} target="_blank">Google Scholar</a></p>
+	</section>
+
+	<section class="section">
+		<h2>Journal Articles</h2>
+		<p class="section-note">* denotes first or corresponding author</p>
+
+		{journalPubs.map(pub => (
+			<div class="publication">
+				<span class="pub-year">{pub.year}</span>
+				<div class="pub-content">
+					<h3>{pub.title}{pub.firstAuthor ? ' *' : ''}</h3>
+					<p class="pub-authors" set:html={pub.authors}></p>
+					<p class="pub-venue">{pub.venue}</p>
+				</div>
+			</div>
+		))}
+	</section>
+
+	<section class="section">
+		<h2>Book Chapters</h2>
+		{bookChapters.map(pub => (
+			<div class="publication">
+				<span class="pub-year">{pub.year}</span>
+				<div class="pub-content">
+					<h3>{pub.title}{pub.firstAuthor ? ' *' : ''}</h3>
+					<p class="pub-authors" set:html={pub.authors}></p>
+					<p class="pub-venue">{pub.venue}</p>
+				</div>
+			</div>
+		))}
+	</section>
+
+	<section class="section">
+		<h2>PhD Thesis</h2>
+		<div class="publication thesis">
+			<span class="pub-year">{thesis.year}</span>
+			<div class="pub-content">
+				<h3>{thesis.title}</h3>
+				<p class="pub-authors"><strong>Gouy A</strong></p>
+				<p class="pub-venue">{thesis.venue} &mdash; <em>{thesis.honors}</em></p>
+				<p class="pub-description">Developed novel statistical methods for detecting selection in large-scale genomic datasets, with applications to human evolution and adaptation. Supervisor: {thesis.supervisor}.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<h2>Media Coverage</h2>
+		<div class="media-list">
+			<div class="media-item">
+				<span class="media-outlet">The Times</span>
+				<a href="https://www.thetimes.com/uk/science/article/neanderthal-dna-gives-humans-healthy-advantage-9dwrg2q88" target="_blank" rel="noopener">Neanderthal DNA gives humans healthy advantage</a>
+			</div>
+			<div class="media-item">
+				<span class="media-outlet">Newsweek</span>
+				<a href="https://www.newsweek.com/interbreeding-neanderthals-denisovans-infectious-diseases-malaria-1482056" target="_blank" rel="noopener">Interbreeding with Neanderthals and Denisovans helped protect humans from infectious diseases</a>
+			</div>
+			<div class="media-item">
+				<span class="media-outlet">Inverse</span>
+				<a href="https://www.inverse.com/article/62293-neanderthal-densivoan-gene-inheritance-study" target="_blank" rel="noopener">Ancient sex with Neanderthals and Denisovans gave us key disease-fighting genes</a>
+			</div>
+			<div class="media-item">
+				<span class="media-outlet">Heidi.news</span>
+				<a href="https://www.heidi.news/sciences/les-etonnantes-traces-laissees-par-neandertal-et-denisova-dans-le-genome-humain" target="_blank" rel="noopener">Les étonnantes traces laissées par Néandertal et Denisova dans le génome humain</a>
+			</div>
+		</div>
+	</section>
+
+</Layout>
+
+<style>
+	.metrics {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: var(--space-lg);
+		padding: var(--space-xl);
+		background: var(--color-surface);
+		border-radius: var(--radius-lg);
+		border: 1px solid var(--color-border);
+		margin-bottom: var(--space-2xl);
+	}
+
+	.metric {
+		text-align: center;
+	}
+
+	.metric-number {
+		display: block;
+		font-size: 2rem;
+		font-weight: 700;
+		color: var(--color-primary);
+	}
+
+	.metric-label {
+		font-size: 0.85rem;
+		color: var(--color-text-muted);
+	}
+
+	.metric-links {
+		grid-column: 1 / -1;
+		display: flex;
+		justify-content: center;
+		gap: var(--space-md);
+		padding-top: var(--space-lg);
+		border-top: 1px solid var(--color-border-light);
+	}
+
+	.metrics-updated {
+		grid-column: 1 / -1;
+		text-align: center;
+		font-size: 0.8rem;
+		color: var(--color-text-muted);
+		margin: 0;
+	}
+
+	.metrics-updated a {
+		color: var(--color-accent);
+	}
+
+	.section-note {
+		font-size: 0.9rem;
+		font-style: italic;
+		color: var(--color-text-muted);
+		margin-bottom: var(--space-lg);
+	}
+
+	.section-note a {
+		color: var(--color-accent);
+	}
+
+	.pub-note {
+		font-size: 0.8rem;
+		font-style: italic;
+		color: var(--color-accent);
+		margin-bottom: 0;
+		margin-top: var(--space-xs);
+	}
+
+	.media-list {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-md);
+	}
+
+	.media-item {
+		display: flex;
+		align-items: baseline;
+		gap: var(--space-lg);
+		padding: var(--space-md) 0;
+		border-bottom: 1px solid var(--color-border-light);
+	}
+
+	.media-item:last-child {
+		border-bottom: none;
+	}
+
+	.media-outlet {
+		font-weight: 600;
+		color: var(--color-accent);
+		min-width: 120px;
+		flex-shrink: 0;
+	}
+
+	.media-item a {
+		font-size: 0.95rem;
+		color: var(--color-text);
+	}
+
+	.media-item a:hover {
+		color: var(--color-primary);
+	}
+
+	@media (max-width: 768px) {
+		.metrics {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.media-item {
+			flex-direction: column;
+			gap: var(--space-xs);
+		}
+
+		.media-outlet {
+			min-width: auto;
+		}
+	}
+</style>

@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About" activePage="about">
+	<section class="hero">
+		<div class="hero-content">
+			<div class="hero-image">
+				<img src="/profile_pic.jpg" alt="Alexandre Gouy" class="profile-pic" />
+			</div>
+			<div class="hero-text">
+				<h1>Alexandre Gouy<span class="title-suffix">, PhD</span></h1>
+				<p class="tagline">Computational Biology &bull; Population Genetics &bull; ML & AI</p>
+				<p class="intro">
+					I develop statistical and machine learning methods for large-scale genomic data analysis,
+					with applications in evolutionary biology, precision medicine, and forensic genetics.
+				</p>
+				<div class="hero-links">
+					<a href="/cv" class="btn btn-primary">View CV</a>
+					<a href="/publications" class="btn btn-secondary">Publications</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<h2>Research Themes</h2>
+		<div class="cards">
+			<div class="card">
+				<h3>Population Genetics</h3>
+				<p>Demographic inference, natural selection, adaptive introgression. Development of statistical methods for analyzing genetic variation at the population scale.</p>
+			</div>
+			<div class="card">
+				<h3>Machine Learning for Genomics</h3>
+				<p>Deep learning and statistical learning approaches for variant calling, phenotype prediction, and multi-omics integration.</p>
+			</div>
+			<div class="card">
+				<h3>Epistasis & Complex Traits</h3>
+				<p>Higher-order genetic interactions, polygenic architecture, and their implications for disease prediction and evolutionary constraints.</p>
+			</div>
+			<div class="card">
+				<h3>AI for Science</h3>
+				<p>Large language models for research assistance, automated scientific workflows, and intelligent data analysis systems.</p>
+			</div>
+		</div>
+	</section>
+</Layout>

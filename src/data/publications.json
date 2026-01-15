@@ -1,0 +1,170 @@
+{
+  "scholarId": "lAxTf6QAAAAJ",
+  "metrics": {
+    "totalCitations": 1100,
+    "hIndex": 10,
+    "lastUpdated": "January 2026"
+  },
+  "publications": [
+    {
+      "id": "fastsimcoal2",
+      "title": "fastsimcoal2: demographic inference under complex evolutionary scenarios",
+      "authors": "Excoffier L, Marchi N, Marques DA, Matthey-Doret R, <strong>Gouy A</strong>, Sousa VC",
+      "venue": "Bioinformatics",
+      "year": 2021,
+      "citations": null,
+      "featured": true,
+      "note": "Standard tool for demographic inference in population genetics",
+      "firstAuthor": false
+    },
+    {
+      "id": "straf",
+      "title": "STRAF—a convenient online tool for STR data evaluation in forensic genetics",
+      "authors": "<strong>Gouy A</strong>, Zieger M",
+      "venue": "Forensic Science International: Genetics",
+      "year": 2017,
+      "citations": null,
+      "featured": true,
+      "note": "Widely adopted by forensic laboratories worldwide",
+      "firstAuthor": true
+    },
+    {
+      "id": "tigers",
+      "title": "Recent evolutionary history of tigers highlights contrasting roles of genetic drift and selection",
+      "authors": "Armstrong EE, Khan A, Taylor RW, <strong>Gouy A</strong>, Greenbaum G, Thiéry A, et al.",
+      "venue": "Molecular Biology and Evolution",
+      "year": 2021,
+      "citations": null,
+      "featured": false,
+      "firstAuthor": false
+    },
+    {
+      "id": "relaxed-selection",
+      "title": "Relaxed selection during a recent human expansion",
+      "authors": "Peischl S, Dupanloup I, Foucal A, Jomphe M, Bruat V, Grenier JC, <strong>Gouy A</strong>, et al.",
+      "venue": "Genetics",
+      "year": 2018,
+      "citations": null,
+      "featured": false,
+      "firstAuthor": false
+    },
+    {
+      "id": "polygenic-introgression",
+      "title": "Polygenic patterns of adaptive introgression in modern humans are mainly shaped by response to pathogens",
+      "authors": "<strong>Gouy A</strong>, Excoffier L",
+      "venue": "Molecular Biology and Evolution",
+      "year": 2020,
+      "citations": null,
+      "featured": false,
+      "firstAuthor": true
+    },
+    {
+      "id": "gene-subnetworks",
+      "title": "Detecting gene subnetworks under selection in biological pathways",
+      "authors": "<strong>Gouy A</strong>, Daub JT, Excoffier L",
+      "venue": "Nucleic Acids Research",
+      "year": 2017,
+      "citations": null,
+      "featured": false,
+      "firstAuthor": true
+    },
+    {
+      "id": "sib",
+      "title": "The SIB Swiss Institute of Bioinformatics' resources: focus on curated databases",
+      "authors": "SIB Swiss Institute of Bioinformatics Members (incl. <strong>Gouy A</strong>)",
+      "venue": "Nucleic Acids Research",
+      "year": 2016,
+      "citations": null,
+      "featured": false,
+      "firstAuthor": false
+    },
+    {
+      "id": "straf2",
+      "title": "STRAF 2: New features and improvements of the STR population data analysis software",
+      "authors": "<strong>Gouy A</strong>, Zieger M",
+      "venue": "Forensic Science International: Genetics",
+      "year": 2025,
+      "citations": null,
+      "featured": false,
+      "firstAuthor": true
+    },
+    {
+      "id": "microtus",
+      "title": "Genomes of Microtus rodents highlight the importance of olfactory and immune systems in their fast radiation",
+      "authors": "<strong>Gouy A</strong>, Wang X, Kapopoulou A, Neuenschwander S, Schmid E, et al.",
+      "venue": "Genome Biology and Evolution",
+      "year": 2024,
+      "citations": null,
+      "featured": false,
+      "firstAuthor": true
+    },
+    {
+      "id": "forensic-swabs",
+      "title": "A holistic approach for the selection of forensic DNA swabs",
+      "authors": "Comment D, <strong>Gouy A</strong>, Zingg C, Zieger M",
+      "venue": "Forensic Science International",
+      "year": 2023,
+      "citations": null,
+      "featured": false,
+      "firstAuthor": false
+    },
+    {
+      "id": "stones-dna",
+      "title": "Human background DNA on stones in an urban environment",
+      "authors": "Sorg A, <strong>Gouy A</strong>, Tieche CC, Zieger M",
+      "venue": "Forensic Science International: Genetics",
+      "year": 2023,
+      "citations": null,
+      "featured": false,
+      "firstAuthor": false
+    },
+    {
+      "id": "x-chromosomal",
+      "title": "Population genetic analysis of 12 X-chromosomal STRs in a Swiss sample",
+      "authors": "Bottinelli M, <strong>Gouy A</strong>, Utz S, Zieger M",
+      "venue": "International Journal of Legal Medicine",
+      "year": 2022,
+      "citations": null,
+      "featured": false,
+      "firstAuthor": false
+    },
+    {
+      "id": "swiss-autosomal",
+      "title": "Expanding the Swiss autosomal marker set to 32 STRs",
+      "authors": "Zieger M, <strong>Gouy A</strong>, Utz S",
+      "venue": "International Journal of Legal Medicine",
+      "year": 2021,
+      "citations": null,
+      "featured": false,
+      "firstAuthor": false
+    },
+    {
+      "id": "infusion",
+      "title": "The summary-likelihood method and its implementation in the Infusion package",
+      "authors": "Rousset F, <strong>Gouy A</strong>, Martinez-Almoyna C, Courtiol A",
+      "venue": "Molecular Ecology Resources",
+      "year": 2017,
+      "citations": null,
+      "featured": false,
+      "firstAuthor": false
+    },
+    {
+      "id": "streams-of-life",
+      "title": "Nothing Stands Still in the Streams of Life",
+      "authors": "<strong>Gouy A</strong>, Cruz Dávalos DI",
+      "venue": "The Art of Theoretical Biology",
+      "year": 2020,
+      "citations": null,
+      "featured": false,
+      "firstAuthor": true,
+      "type": "book-chapter"
+    }
+  ],
+  "thesis": {
+    "title": "Detection of polygenic selection from genomic data: new insights into adaptation, introgression and speciation",
+    "year": 2019,
+    "venue": "University of Bern, Switzerland",
+    "honors": "summa cum laude",
+    "supervisor": "Prof. Laurent Excoffier"
+  }
+}
