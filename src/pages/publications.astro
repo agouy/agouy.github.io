@@ -46,7 +46,7 @@ const firstAuthorCount = publications.filter(p => p.firstAuthor).length;
 			<div class="publication">
 				<span class="pub-year">{pub.year}</span>
 				<div class="pub-content">
-					<h3>{pub.title}{pub.firstAuthor ? ' *' : ''}</h3>
+					<h3>{pub.doi ? <a href={`https://doi.org/${pub.doi}`} target="_blank" rel="noopener">{pub.title}</a> : pub.title}{pub.firstAuthor ? ' *' : ''}</h3>
 					<p class="pub-authors" set:html={pub.authors}></p>
 					<p class="pub-venue">{pub.venue}</p>
 				</div>
@@ -60,7 +60,7 @@ const firstAuthorCount = publications.filter(p => p.firstAuthor).length;
 			<div class="publication">
 				<span class="pub-year">{pub.year}</span>
 				<div class="pub-content">
-					<h3>{pub.title}{pub.firstAuthor ? ' *' : ''}</h3>
+					<h3>{pub.doi ? <a href={`https://doi.org/${pub.doi}`} target="_blank" rel="noopener">{pub.title}</a> : pub.title}{pub.firstAuthor ? ' *' : ''}</h3>
 					<p class="pub-authors" set:html={pub.authors}></p>
 					<p class="pub-venue">{pub.venue}</p>
 				</div>

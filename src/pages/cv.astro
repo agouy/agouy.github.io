@@ -16,15 +16,13 @@ import Layout from '../layouts/Layout.astro';
 				<div class="timeline-content">
 					<h4>Founder & Owner</h4>
 					<p>AlgoLife SARL (formerly Gouy Data Consulting), France/Switzerland</p>
-					<p class="timeline-details">Data science solutions (software, visualization, pipelines) for life sciences companies, universities, and local governments. 5-star rated consultant on Upwork with international high-impact collaborations.</p>
-				</div>
-			</div>
-			<div class="timeline-item">
-				<span class="timeline-date">2022&ndash;2025</span>
-				<div class="timeline-content">
-					<h4>Head of Bioinformatics</h4>
-					<p>Tercen Data Analytics Ltd, Netherlands</p>
-					<p class="timeline-details">Led bioinformatics and AI product development for a cloud-based multi-omics analysis platform. Shipped production pipelines for scRNA-seq, spatial transcriptomics, and flow cytometry.</p>
+					<p class="timeline-details">Data science and software development for life sciences companies, universities, and local governments.</p>
+					<p class="timeline-details" style="margin-bottom: var(--space-xs);"><strong>Selected projects:</strong></p>
+					<ul class="timeline-projects">
+						<li><strong>Head of Bioinformatics, Tercen</strong> (2022&ndash;2025) - Led bioinformatics and AI product development for a cloud-based multi-omics analysis platform. MCP server for automated data analysis selected for <strong>SLAS 2026 Innovation AveNEW</strong>.</li>
+						<li><strong>Mitan</strong> - Geospatial forest monitoring platform combining remote sensing, ecology, and local knowledge. Deployed with NGOs and French communes. <a href="https://aumitan.com" target="_blank" rel="noopener">aumitan.com</a></li>
+						<li>Predictive algorithm for IVF success rates, in collaboration with a health-tech startup and a major university hospital in Paris (AP-HP).</li>
+					</ul>
 				</div>
 			</div>
 			<div class="timeline-item">
@@ -32,7 +30,7 @@ import Layout from '../layouts/Layout.astro';
 				<div class="timeline-content">
 					<h4>Senior Expert Data Science II</h4>
 					<p>Novartis Pharma AG (via Brine SA), Basel, Switzerland</p>
-					<p class="timeline-details">Contributed to the data42 program, leveraging AI and big data for drug discovery. Developed ML models on one of the largest pharmaceutical datasets (2M patient-years). Key role in developing the Map of Life platform.</p>
+					<p class="timeline-details">Contributed to Novartis's data42 initiative, an internal program applying AI and large-scale real-world data to accelerate drug discovery and development. Developed ML models on one of the largest pharmaceutical datasets (2M+ patient-years, 15B+ data points). Key role in building the Map of Life platform for disease-gene-drug network analysis.</p>
 				</div>
 			</div>
 			<div class="timeline-item">
@@ -192,20 +190,17 @@ import Layout from '../layouts/Layout.astro';
 		<div class="teaching-grid">
 			<div class="teaching-block">
 				<h4>University Teaching</h4>
-				<p class="teaching-context">University of Bern, 2015&ndash;2019</p>
 				<ul>
-					<li>Genomics and Bioinformatics (Master's) &mdash; 60h</li>
-					<li>Statistics for Biologists (Undergrad) &mdash; 60h</li>
-					<li>Introduction to R Programming &mdash; 40h</li>
-					<li>Population Genetics Seminars &mdash; 20h</li>
+					<li><strong>University of Bern</strong> (2015&ndash;2019) &mdash; 180h total: Genomics and Bioinformatics (Master's), Statistics for Biologists, Introduction to R, Population Genetics Seminars</li>
+					<li><strong>University of Limoges</strong> (2012&ndash;2013) &mdash; 350h: IT certification training, database management (SQL)</li>
 				</ul>
 			</div>
 			<div class="teaching-block">
 				<h4>Student Supervision</h4>
 				<ul>
-					<li><strong>Edgar Maurel</strong> (2025) &mdash; Engineering internship, AI automation</li>
-					<li><strong>Tobias Böni</strong> (2019) &mdash; Master's thesis, co-supervisor</li>
-					<li><strong>Hira Imeri</strong> (2018) &mdash; Master's thesis, ML in population genetics</li>
+					<li>Engineering internship (2025) &mdash; AI automation of data analysis workflows</li>
+					<li>Master's thesis (2019) &mdash; University of Bern, co-supervisor</li>
+					<li>Master's thesis (2018) &mdash; ML methods in population genetics, University of Bern</li>
 				</ul>
 			</div>
 			</div>
@@ -221,7 +216,6 @@ import Layout from '../layouts/Layout.astro';
 			<div class="service-block">
 				<h4>Professional Memberships</h4>
 				<ul>
-					<li>ISFG &mdash; International Society for Forensic Genetics</li>
 					<li>SMBE &mdash; Society for Molecular Biology and Evolution</li>
 					<li>ISCB &mdash; International Society for Computational Biology</li>
 				</ul>
@@ -262,6 +256,22 @@ import Layout from '../layouts/Layout.astro';
 		color: var(--color-text-muted);
 		margin-top: var(--space-xs);
 		margin-bottom: 0;
+	}
+
+	.timeline-projects {
+		list-style: none;
+		padding: 0;
+		margin-top: var(--space-sm);
+		margin-bottom: 0;
+	}
+
+	.timeline-projects li {
+		font-size: 0.85rem;
+		color: var(--color-text-muted);
+		padding: var(--space-xs) 0;
+		padding-left: var(--space-md);
+		border-left: 2px solid var(--color-border);
+		margin-bottom: var(--space-xs);
 	}
 
 	.software-grid {
