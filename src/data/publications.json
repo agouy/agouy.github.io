@@ -7,13 +7,32 @@
   },
   "publications": [
     {
+      "id": "topology-mutation",
+      "title": "The interaction of biological network topology and mutation effects in complex trait evolution",
+      "authors": "<strong>Gouy A</strong>",
+      "venue": "in press (2026)",
+      "year": 2026,
+      "status": "in press",
+      "featured": false,
+      "firstAuthor": true
+    },
+    {
+      "id": "cost-of-complexity",
+      "title": "Beyond the Cost of Complexity: Gene-Intrinsic versus Topological Constraint in Regulatory Networks",
+      "authors": "<strong>Gouy A</strong>",
+      "venue": "submitted (2026)",
+      "year": 2026,
+      "status": "submitted",
+      "featured": false,
+      "firstAuthor": true
+    },
+    {
       "id": "necrobiome-pmi",
       "title": "Dual-kingdom necrobiome succession extends postmortem interval estimation into skeletonization",
       "authors": "Tièche EP, Indra L, <strong>Gouy A</strong>, Heckel G, Zieger M",
       "venue": "Forensic Science International: Genetics",
       "year": 2026,
       "doi": "10.1016/j.fsigen.2026.103445",
-      "citations": null,
       "featured": false,
       "firstAuthor": false
     },
@@ -24,9 +43,7 @@
       "venue": "Bioinformatics",
       "year": 2021,
       "doi": "10.1093/bioinformatics/btab468",
-      "citations": null,
       "featured": true,
-      "note": "Standard tool for demographic inference in population genetics",
       "firstAuthor": false
     },
     {
@@ -36,9 +53,7 @@
       "venue": "Forensic Science International: Genetics",
       "year": 2017,
       "doi": "10.1016/j.fsigen.2017.07.007",
-      "citations": null,
       "featured": true,
-      "note": "Widely adopted by forensic laboratories worldwide",
       "firstAuthor": true
     },
     {
@@ -48,7 +63,6 @@
       "venue": "Molecular Biology and Evolution",
       "year": 2021,
       "doi": "10.1093/molbev/msab032",
-      "citations": null,
       "featured": false,
       "firstAuthor": false
     },
@@ -59,7 +73,6 @@
       "venue": "Genetics",
       "year": 2018,
       "doi": "10.1534/genetics.117.300551",
-      "citations": null,
       "featured": false,
       "firstAuthor": false
     },
@@ -70,7 +83,6 @@
       "venue": "Molecular Biology and Evolution",
       "year": 2020,
       "doi": "10.1093/molbev/msz306",
-      "citations": null,
       "featured": false,
       "firstAuthor": true
     },
@@ -81,7 +93,6 @@
       "venue": "Nucleic Acids Research",
       "year": 2017,
       "doi": "10.1093/nar/gkx626",
-      "citations": null,
       "featured": false,
       "firstAuthor": true
     },
@@ -92,7 +103,6 @@
       "venue": "Nucleic Acids Research",
       "year": 2016,
       "doi": "10.1093/nar/gkv1310",
-      "citations": null,
       "featured": false,
       "firstAuthor": false
     },
@@ -103,7 +113,6 @@
       "venue": "Forensic Science International: Genetics",
       "year": 2025,
       "doi": "10.1016/j.fsigen.2024.103207",
-      "citations": null,
       "featured": false,
       "firstAuthor": true
     },
@@ -114,7 +123,6 @@
       "venue": "Genome Biology and Evolution",
       "year": 2024,
       "doi": "10.1093/gbe/evae233",
-      "citations": null,
       "featured": false,
       "firstAuthor": true
     },
@@ -125,7 +133,6 @@
       "venue": "Forensic Science International",
       "year": 2023,
       "doi": "10.1016/j.forsciint.2023.111737",
-      "citations": null,
       "featured": false,
       "firstAuthor": false
     },
@@ -136,7 +143,6 @@
       "venue": "Forensic Science International: Genetics",
       "year": 2023,
       "doi": "10.1016/j.fsigen.2023.102880",
-      "citations": null,
       "featured": false,
       "firstAuthor": false
     },
@@ -147,7 +153,6 @@
       "venue": "International Journal of Legal Medicine",
       "year": 2022,
       "doi": "10.1007/s00414-021-02684-y",
-      "citations": null,
       "featured": false,
       "firstAuthor": false
     },
@@ -158,7 +163,6 @@
       "venue": "International Journal of Legal Medicine",
       "year": 2021,
       "doi": "10.1007/s00414-021-02624-w",
-      "citations": null,
       "featured": false,
       "firstAuthor": false
     },
@@ -169,7 +173,6 @@
       "venue": "Molecular Ecology Resources",
       "year": 2017,
       "doi": "10.1111/1755-0998.12627",
-      "citations": null,
       "featured": false,
       "firstAuthor": false
     },
@@ -180,7 +183,6 @@
       "venue": "The Art of Theoretical Biology",
       "year": 2020,
       "doi": "10.1007/978-3-030-33471-0_28",
-      "citations": null,
       "featured": false,
       "firstAuthor": true,
       "type": "book-chapter"
